@@ -85,7 +85,7 @@ function initializeGrid() {
     document.getElementById('path-info').textContent = '';
 }
 
-function handleCellClick(row, col) {
+function handleCellClick(row, col) { //to handle cell click
     // Clear previous path
     clearPath();
     
@@ -139,7 +139,7 @@ function updateGridUI() {
     }
 }
 
-function findShortestPath() {
+function findShortestPath() { // find the shortest path
     // Check if start and end nodes are set
     if (!startNode || !endNode) {
         document.getElementById('path-info').textContent = 'Please set both start and end points';
