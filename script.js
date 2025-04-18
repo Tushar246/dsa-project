@@ -85,7 +85,7 @@ function initializeGrid() {
     document.getElementById('path-info').textContent = '';
 }
 
-function handleCellClick(row, col) {
+function handleCellClick(row, col) { //to handle cell click
     // Clear previous path
     clearPath();
     
@@ -120,7 +120,7 @@ function handleCellClick(row, col) {
     }
 }
 
-function updateGridUI() {
+function updateGridUI() { // update grid ui
     for (let row = 0; row < gridSize; row++) {
         for (let col = 0; col < gridSize; col++) {
             const cell = document.querySelector(`.grid-cell[data-row="${row}"][data-col="${col}"]`);
@@ -139,7 +139,7 @@ function updateGridUI() {
     }
 }
 
-function findShortestPath() {
+function findShortestPath() { //to find shortest path
     // Check if start and end nodes are set
     if (!startNode || !endNode) {
         document.getElementById('path-info').textContent = 'Please set both start and end points';
